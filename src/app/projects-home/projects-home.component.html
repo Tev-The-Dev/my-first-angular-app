@@ -1,1 +1,69 @@
-<p>projects-home works!</p>
+<div>
+    <h2 class="projectTitle">Project 1 - The Dynamic Business Card</h2>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Modify Your Business Card</legend>
+            <label>First Name</label><input id="firstNameInput" (input)="setProperty($event)"><br>
+            <label>Last Name</label><input id="lastNameInput" (input)="setProperty($event)"><br>
+            <label>Phone Number</label><input id="phoneNumberInput" (input)="setProperty($event)"><br>
+            <label>Job Title</label><input id="jobTitle" (input)="setProperty($event)"><br>
+            <label>Email</label><input id="emailInput" (input)="setProperty($event)">
+        </fieldset>
+    </form>
+
+    <button class="card">
+        <div class="row clearfix">
+            <div class="left big">{{phoneNumber}}<br>{{email}}</div>
+            <div class="right">
+                <p><span class="big">E</span>rnst & <span class="big">S</span>ohn</p>
+                <p><span class="med no-space">A W</span><span class="small no-space">iley </span>
+                <span class="med no-space">B</span><span class="small no-space">rand</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="capitalize">{{firstName}} <span class="capitalize">{{lastName}}</span></p>
+            <p class="capitalize">{{jobTitle}}</p>
+        </div>
+        <div class="row">
+            <p>
+              <span class="med">375 E</span><span class="small">xchange </span><span class="med">P</span>
+              <span class="small">lace </span><span class="med">N</span><span class="small">ew </span>
+              <span class="med">Y</span><span class="small">ork</span><span class="med">, N. Y. 10099 F</span>
+              <span class="small">ax </span><span class="med">201 555 6390 T</span><span class="small">elex </span>
+              <span class="med">10 4534</span>
+            </p>
+        </div>
+    </button>
+</div>
+<hr>
+<div>
+    <h2 class="calculator">Project 2 - The Calculator</h2>
+        <table class="calcTable">
+           <th class="calcDisplay">{{display}}</th>
+            <tr class="rowOne">
+                <td (click)="getNum(seven)"><button type="button" id="seven">{{seven}}</button></td>
+                <td (click)="getNum(eight)"><button type="button" id="eight">{{eight}}</button></td>
+                <td (click)="getNum(nine)"><button type="button" id="nine">{{nine}}</button></td>
+                <td (click)="getOperator(subtract)"><button type="button" id="subtract">{{subtract}}</button></td>
+            </tr>
+            <tr class="rowTwo">
+                <td (click)="getNum(four)"><button type="button" id="four">{{four}}</button></td>
+                <td (click)="getNum(five)"><button type="button" id="five">{{five}}</button></td>
+                <td (click)="getNum(six)"><button type="button" id="six">{{six}}</button></td>
+                <td (click)="getOperator(add)"><button type="button" id="add">{{add}}</button></td>
+            </tr>
+            <tr class="rowThree">
+                <td (click)="getNum(one)"><button type="button" id="one">{{one}}</button></td>
+                <td (click)="getNum(two)"><button type="button" id="two">{{two}}</button></td>
+                <td (click)="getNum(three)"><button type="button" id="three">{{three}}</button></td>
+                <td (click)="getOperator(multiply)"><button type="button" id="multiply">{{multiply}}</button></td>
+            </tr>
+            <tr class="rowFour">
+                <td (click)="onClear()"><button type="button" id="clear">{{clear}}</button></td>
+                <td (click)="getNum(zero)"><button type="button" id="zero">{{zero}}</button></td>
+                <td (click)="calculate()"><button type="button" id="equals">{{equals}}</button></td>
+                <td (click)="getOperator(divide)"><button type="button" id="divide">{{divide}}</button></td>
+            </tr>
+        </table>
+</div>

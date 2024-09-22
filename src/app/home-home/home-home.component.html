@@ -1,18 +1,22 @@
 <div class="resume">
     <div class="personalInfo">
-        <h1>Tevyn Payne</h1>
+        <h1>{{bankerName}}</h1>
         <h2>Software Engineer and Developer</h2>
-        <address>Euless, TX<br>(469)597-8480<br>tevyn.payne&#64;gmail.com</address>
+        <address>{{bankerAddress}}<br>
+            {{bankerCity}}, {{bankerState}}, {{bankerZip}}<br>
+            {{bankerPhone}}<br>
+            {{bankerEmail}}
+        </address>
 
     </div>
     <div class="summary">
         <h2>Summary</h2>
-        <p>Eager and motivated software developer with extensive knowledge and hands-on experience in several languages, programming principles, data structures, object-oriented programming algorithms and databases, seeking a challenging role within a reputable organization. Possesses a positive attitude and strong written and verbal communication skills that facilitate effective collaboration. Demonstrates a process optimized logical mindset, drawing from a diverse background that enhances problem-solving and innovation. Committed to contributing positively to organizational goals and fostering a culture of continuous improvement. </p>
+        <p>{{summary}} </p>
     </div>
     <div class="education">
         <h2>Education</h2>
-        <p>Western Govener's University <span class="educationDates">09/23 - 08/25</span><br>
-        Bachelor of Science, Software Engineering
+        <p>{{school}} <span class="educationDates">{{schoolDates}}</span><br>
+        {{schoolDegree}}
         </p>
         <p>Florida State University <span class="educationDates">01/14 - 06/18</span><br>
         Bachelor of Arts, Japanese Language and Culture and Computer Programming
@@ -21,7 +25,7 @@
     </div>
     <div class="experience">
         <h2>Experience</h2>
-        <p>Albertsons | Frozen Foods Manager <span class="employmentDates">09/2023 - Pressent</span></p>
+        <p>{{employerName}} | {{jobTitle}} <span class="employmentDates">{{employmentDates}}</span></p>
         <ul>
             <li>Manages inventory assets, ordering and updating the online management system</li>
             <li>Collaborates and assists other staff in daily routine checks and duties</li>
